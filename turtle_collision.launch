@@ -1,0 +1,11 @@
+<launch>
+    <!-- Chạy turtlesim -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" output="screen"/>
+
+    <!-- Spawn con rùa mới -->
+    <node pkg="turtle_collision" type="spawn_turtles.py" name="spawn_turtles" output="screen"/>
+
+    <!-- Chạy di chuyển hai con rùa -->
+    <node pkg="turtle_collision" type="move_turtles.py" name="move_turtles" output="screen"/>
+</launch>
+
